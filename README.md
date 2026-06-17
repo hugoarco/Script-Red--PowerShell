@@ -1,4 +1,4 @@
-Script de Red en PowerShell
+## Script de Red en PowerShell
 
 Script interactivo en PowerShell que ofrece un menú con herramientas de red para administrar y diagnosticar la red.
 
