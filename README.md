@@ -1,62 +1,98 @@
-## Script de Red en PowerShell
+<h1 align = "center" >🌐 Script de Red en PowerShell</h1>
 
-Script interactivo en PowerShell que ofrece un menú con herramientas de red para administrar y diagnosticar la red.
+Este es un script interactivo hecho en PowerShell que incluye un menú con varias herramientas básicas de red. Está pensado para facilitar tareas de diagnóstico y administración de red desde la consola de Windows.
 
-Este script es muy útil para trabajar con la red. Tiene un menú que te permite elegir entre diferentes herramientas de red.
+Es un proyecto sencillo pero muy útil para aprender y practicar comandos de red en PowerShell.
 
-**Funciones disponibles**
+<br><br>
 
-1. **Prueba de loopback**: Puedes probar la conectividad con el comando `ping 127.0.0.1`.
+⚙️ ¿Qué hace este script?
 
-2. **Configuración básica de red**: Puedes ver la configuración básica de la red con el comando `ipconfig`.
+El script te muestra un menú donde puedes elegir diferentes acciones relacionadas con la red, como comprobar conexión, ver configuración o liberar IP.
 
-3. **Configuración completa de red**: Puedes ver la configuración completa de la red con el comando `ipconfig /all`.
+<br><br>
+<br><br>
+🧰 Funciones disponibles
 
-4. **Rastreo de ruta**: Puedes rastrear la ruta a una IP o dominio con el comando `tracert`.
+Estas son las opciones que puedes usar dentro del script:
 
-5. **Prueba de conectividad a Google DNS**: Puedes probar la conectividad a Google DNS con el comando `ping 8.8.8.8`.
+🔁 Prueba de loopback
+Comprueba la conectividad local con: ping 127.0.0.1
+<br><br>
 
-6. **Prueba de conectividad a Google**: Puedes probar la conectividad a Google con el comando `ping google.com`.
+🌐 Configuración básica de red
+Muestra la configuración de red con: ipconfig
+<br><br>
 
-7. **Liberar dirección IP**: Puedes liberar la dirección IP con el comando `ipconfig /release`.
+📡 Configuración completa de red
+Muestra información detallada con: ipconfig /all
+<br><br>
+🧭 Rastreo de ruta
+Permite ver la ruta hacia una IP o dominio con: tracert
+<br><br>
+🟢 Ping a Google DNS
+Comprueba conexión con: ping 8.8.8.8
+<br><br>
+🌍 Ping a Google
+Comprueba conectividad a internet con: ping google.com
+<br><br>
+⬇️ Liberar dirección IP
+Ejecuta: ipconfig /release
+<br><br>
+⬆️ Renovar dirección IP
+Ejecuta: ipconfig /renew
+<br><br>
+🧹 Limpiar caché DNS
+Ejecuta: ipconfig /flushdns
+<br><br>
+🚪 Salir
+Cierra el script
+<br><br>
+<br><br>
 
-8. **Renovar dirección IP**: Puedes renovar la dirección IP con el comando `ipconfig /renew`.
+🚀 Instalación y ejecución
 
-9. **Limpiar caché DNS**: Puedes limpiar el caché DNS con el comando `ipconfig /flushdns`.
+Sigue estos pasos para usar el script:
 
-10. **Salir**: Puedes cerrar el script.
+Guarda el archivo como red.ps1
+Abre PowerShell como administrador
+Ejecuta el script:
+.\red.ps1
+Si te da error de permisos, ejecuta:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-**Instalación y ejecución**
+<br><br>
+<br><br>
+🧠 Estructura del script
 
-Para ejecutar este script, sigue estos pasos:
+El script está organizado de forma sencilla:
 
-* Guarda el script como `red.ps1`.
+🔐 Identificación de usuario
+📋 Menú principal en bucle
+🌐 9 funciones de red independientes
+🚪 Función de salida
 
-* Abre PowerShell como administrador.
+<br><br>
+<br><br>
 
-* Ejecuta el comando `.\red.ps1`.
+📌 Requisitos
+Windows 10 u 11
+PowerShell 5.0 o superior
+Permisos de administrador (necesarios para algunas opciones)
+<br><br>
+<br><br>
+👨‍💻 Autor
+Creado por Hugo Arcones
+Proyecto personal para aprender y practicar administración de redes con PowerShell.
+<br><br>
+<br<br>
 
-Si aparece un error de ejecución, puedes ejecutar el comando `powershell Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`.
+⭐ Nota final
 
-**Estructura del código**
+Si este proyecto te ha servido o te ha ayudado a aprender algo nuevo, se agradece mucho una estrella en GitHub 👍
 
-Este script tiene una estructura sencilla:
-
-* Identificación de usuarios
-
-* Menú principal con bucle
-
-* 9 funciones de red independientes
-
-* Función de salida
-
-**Autor y licencia**
-
-Este script fue creado por Hugo Arcones y tiene una licencia MIT.
-
-**Requisitos**
-
-Para ejecutar este script, necesitas:
+<br><br>
+<br><br>
 
 * Windows 10 o 11
 
