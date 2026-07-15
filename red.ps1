@@ -22,16 +22,15 @@ function menu {
     $opcionmenu = 0 
     while ($opcionmenu -ne 10) {
         Write-Host "--- Opciones del menú ---" -ForegroundColor Cyan
-        Write-Host "1. Ping Direccion Loopback"
-        Write-Host "2. Ipconfig"
-        Write-Host "3. Ipconfig/all"
-        Write-Host "4. Tracert"
-        Write-Host "5. Ping 8.8.8.8"
-        Write-Host "6. Ping google.com"
-        Write-Host "7. Ipconfig /release"
-        Write-Host "8. Ipconfig /renew"
-        Write-Host "9. Ipconfig /flushdns"
-        Write-Host "10. Salir"
+        Write-Host "1. Ping Direccion Loopback"-ForegroundColor Cyan
+        Write-Host "2. Ipconfig" -ForegroundColor Cyan
+        Write-Host "3. Ipconfig/all" -ForegroundColor Cyan
+        Write-Host "4. Tracert" -ForegroundColor Cyan
+        Write-Host "6. Ping google.com" -ForegroundColor Cyan
+        Write-Host "7. Ipconfig /release" -ForegroundColor Cyan
+        Write-Host "8. Ipconfig /renew" -ForegroundColor Cyan
+        Write-Host "9. Ipconfig /flushdns" -ForegroundColor Cyan
+        Write-Host "10. Salir" -ForegroundColor Cyan
         
         $opcionmenu = Read-Host ("Introduzca el numero del menu")
   
@@ -171,7 +170,5 @@ function Salir {
     }
 }
 
-identifacionusuarios
-menu
 identifacionusuarios
 menu
