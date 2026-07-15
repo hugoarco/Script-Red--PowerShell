@@ -55,7 +55,9 @@ function PingDireccionLoopback {
     if ($PingDireccionLoopbacksino -eq "Si") {
         Write-Host "Ok, vamos a proceder a la prueba de conectividad..." -ForegroundColor Green
         ping 127.0.0.1
-        New-Item -Path "   Ping_Direccion_Loopback.txt." -ItemType File -Force
+
+        New-Item -Path "Ping_Direccion_Loopback.txt." -ItemType File -Force
+
         write-Host ("Archivo de la prueba creado correctamente") -ForeGroundColor Green   
     }
     else {
@@ -68,6 +70,7 @@ function EjecutarIpconfig {
     if ($sino -eq "Si") {
         Write-Host "Mostrando direccionamiento IP básico..." -ForegroundColor Green
         ipconfig
+
         New-Item -Path " ipconfing.txt." -ItemType File -Force  
     }
     else {
@@ -80,6 +83,7 @@ function EjecutarIpconfigAll {
     if ($sino -eq "Si") {
         Write-Host "Mostrando información de red completa..." -ForegroundColor Green
         ipconfig /all
+
     New-Item -Path " ipconfing_all.txt." -ItemType File -Force   
     }
     else {
@@ -93,6 +97,7 @@ function EjecutarTracert {
         $direccion = Read-Host "Introduzca la dirección IP o dominio (ej: 8.8.8.8)"
         Write-Host "Trazando ruta hacia $direccion..." -ForegroundColor Green
         tracert $direccion
+
          New-Item -Path " tracert.txt." -ItemType File -Force    
     }
     else {
@@ -104,6 +109,7 @@ function PingDNSGoogle {
     $sino = Read-Host ("¿Desea hacer ping a los servidores DNS de Google 8.8.8.8? (Si/No)")
     if ($sino -eq "Si") {
         ping 8.8.8.8
+
        New-Item -Path " Ping_DNS_Google.txt." -ItemType File -Force   
     }
     else {
@@ -115,6 +121,7 @@ function PingGoogle {
     $sino = Read-Host ("¿Desea hacer ping a google.com? (Si/No)")
     if ($sino -eq "Si") {
         ping google.com
+
         New-Item -Path " Ping_Google.txt." -ItemType File -Force   
     }
     else {
@@ -127,6 +134,7 @@ function IpconfigRelease {
     if ($sino -eq "Si") {
         Write-Host "Liberando IP..." -ForegroundColor Yellow
         ipconfig /release
+
          New-Item -Path " IpconfigRelease.txt." -ItemType File -Force   
     }
     else {
@@ -139,6 +147,7 @@ function IpconfigRenew {
     if ($sino -eq "Si") {
         Write-Host "Renovando IP..." -ForegroundColor Yellow
         ipconfig /renew
+
            New-Item -Path " ipconfig_renew.txt.txt" -ItemType File -Force  
     }
     else {
@@ -151,6 +160,7 @@ function IpconfigFlushDNS {
     if ($sino -eq "Si") {
         Write-Host "Vaciando caché DNS..." -ForegroundColor Yellow
         ipconfig /flushdns
+
       New-Item -Path "Ipconfig_FlushDNS.txt" -ItemType File -Force
 
     }
